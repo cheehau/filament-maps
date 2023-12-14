@@ -8,15 +8,18 @@ use Illuminate\Support\HtmlString;
 use Webbingbrasil\FilamentCopyActions\Forms\Actions\CopyAction;
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 use BladeUI\Icons\Factory;
 use Illuminate\Contracts\Container\Container;
 
-class FilamentMapsProvider extends PluginServiceProvider
+class FilamentMapsProvider extends PackageServiceProvider
 {
+    public static string $name = 'filament-maps';
+
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-maps')
+            ->name(static::$name)
             ->hasViews();
     }
 
