@@ -19,7 +19,7 @@ use Webbingbrasil\FilamentMaps\Concerns\HasPolylines;
 use Webbingbrasil\FilamentMaps\Concerns\HasRectangles;
 use Webbingbrasil\FilamentMaps\Concerns\HasTileLayer;
 
-abstract class MapWidget extends Widget implements HasForms, RendersFormComponentActionModal
+abstract class MapWidget extends Widget implements HasForms
 {
     use HasExtraAttributes;
     use HasExtraAlpineAttributes;
