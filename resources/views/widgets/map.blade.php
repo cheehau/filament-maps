@@ -16,9 +16,9 @@
                 'px-6 py-4' => !$hasBorder,
             ])>
                 <div class="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
-                    <x-filament::card.heading>
+                    {{-- <x-filament::card.heading>
                         {{ $heading }}
-                    </x-filament::card.heading>
+                    </x-filament::card.heading> --}}
                 </div>
             </div>
         @endif
