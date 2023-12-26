@@ -481,9 +481,9 @@
                         </x-filament::modal.heading>
 
                         @if ($subheading = $action->getModalSubheading())
-                            <x-filament::modal.subheading>
+                            <x-filament::modal.heading>
                                 {{ $subheading }}
-                            </x-filament::modal.subheading>
+                            </x-filament::modal.heading>
                         @endif
                     </x-slot>
                 @endif
