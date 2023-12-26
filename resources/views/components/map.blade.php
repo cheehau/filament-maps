@@ -480,11 +480,12 @@
                             {{ $action->getModalHeading() }}
                         </x-filament::modal.heading>
 
-                        @if ($subheading = $action->getModalSubheading())
-                            <x-filament::modal.heading>
+                        {{-- Temp --}}
+                        {{-- @if ($subheading = $action->getModalSubheading())
+                            <x-filament::modal.subheading>
                                 {{ $subheading }}
-                            </x-filament::modal.heading>
-                        @endif
+                            </x-filament::modal.subheading>
+                        @endif --}}
                     </x-slot>
                 @endif
 
@@ -494,7 +495,8 @@
                     {{ $this->getMountedActionForm() }}
                 @endif
 
-                @if (count($action->getModalActions()))
+                {{-- Temp --}}
+                {{-- @if (count($action->getModalActions()))
                     <x-slot name="footer">
                         <x-filament::modal.actions :full-width="$action->isModalCentered()">
                             @foreach ($action->getModalActions() as $modalAction)
@@ -502,7 +504,7 @@
                             @endforeach
                         </x-filament::modal.actions>
                     </x-slot>
-                @endif
+                @endif --}}
             @endif
         </x-filament::modal>
     </form>
