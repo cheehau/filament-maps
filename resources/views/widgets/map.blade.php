@@ -23,9 +23,9 @@
             </div>
         @endif
 
-        @if ($heading)
+        {{-- @if ($heading)
             <x-filament::hr />
-        @endif
+        @endif --}}
 
         <div @class(['px-4 py-2' => $hasBorder])>
             <x-filament-maps::map
@@ -40,9 +40,9 @@
                 :fullpage="$this->isFullPage()" />
         </div>
 
-        @if ($footer)
+        {{-- @if ($footer)
             <x-filament::hr />
-        @endif
+        @endif --}}
 
         @if ($footer)
             <div @class([
