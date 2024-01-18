@@ -4,8 +4,8 @@ namespace Webbingbrasil\FilamentMaps\Actions;
 
 use Closure;
 use Filament\Pages\Actions\Modal\Actions\Action as ModalAction;
-use Filament\Support\Actions\Action as BaseAction;
-use Filament\Support\Actions\Concerns;
+use Filament\Actions\Action as BaseAction;
+use Filament\Actions\Concerns;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Webbingbrasil\FilamentMaps\Actions\Concerns\HasCallback;
